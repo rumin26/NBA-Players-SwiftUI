@@ -25,7 +25,7 @@ struct StatsText: View {
                 .fontWeight(.light).padding(.trailing, 30.0)
                 .foregroundColor(.blue)
             Spacer()
-        }
+        }.minimumScaleFactor(0.5).lineLimit(1)
         
     }
 }

@@ -20,7 +20,12 @@ struct PlayerRow: View {
                 .background(Circle().foregroundColor(player.team.color))
                 .padding(.top, 10)
                 .padding(.bottom, 10)
-            Text(player.name).font(.largeTitle).offset(x: 10, y: 0).foregroundColor(.blue)
+            Text(player.name)
+                .font(.largeTitle)
+                .offset(x: 10, y: 0)
+                .foregroundColor(.blue)
+                .minimumScaleFactor(0.5)
+                .lineLimit(1)
             Spacer()
         }
     }
